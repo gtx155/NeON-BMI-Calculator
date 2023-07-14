@@ -1,29 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+
 .TitleHeading {
     text-align: center;
     z-index: 1;
     position: relative;
+    margin-bottom: 25px;
 
     font-size: 30px;
+    font-family: 'Vibur', cursive;
 
-    color: #fff;
     text-shadow:
       /* White glow */
-      0 0 7px #fff,
-      0 0 21px #fff,
+      0 0 7px #FBFEF9,
+      0 0 21px #FBFEF9,
       /* Green glow */
-      0 0 42px #0fa,
-      0 0 92px #0fa,
-      0 0 151px #0fa;
+      0 0 42px #FBFEF9,
+      0 0 92px #FBFEF9,
+      0 0 151px #FBFEF9;
 
-      border: 0.2rem solid #fff;
-      border-radius: 2rem;
+      border: 0.2rem solid #FC321A;
+      border-radius: 1.5rem;
       padding: 0.4em;
-      box-shadow: 0 0 .2rem #fff,
-                  0 0 .2rem #fff,
-                  0 0 2rem #bc13fe,
-                  0 0 0.8rem #bc13fe,
-                  0 0 2.8rem #bc13fe,
-                  inset 0 0 1.3rem #bc13fe;
+      box-shadow: 0 0 .2rem #F1FF45,
+                  0 0 .2rem #F1FF45,
+                  0 0 2rem #FC321A,
+                  0 0 0.8rem #FC321A,
+                  0 0 2.8rem #FC321A,
+                  inset 0 0 1.3rem #FC321A;
 }
 
 h1 {
@@ -32,8 +35,7 @@ h1 {
     position: relative;
 
     font-size: 30px;
-
-    color: #fff;
+    color: #FBFEF9;
 }
 
 form {
@@ -43,23 +45,105 @@ form {
 }
 
 input[type=number] {
-    margin-bottom: 5px;
-    border: 0.2rem solid #fff;
-    border-radius: 2rem;
-    padding: 0.7em;
-    box-shadow: 0 0 .2rem #fff,
-                0 0 .2rem #fff,
-                0 0 2rem #bc13fe,
-                0 0 0.8rem #bc13fe,
-                0 0 2.8rem #bc13fe,
-                inset 0 0 1.3rem #bc13fe;
+
+    background-color: #1E1E1E;
+    color: #FBFEF9;
+    margin-bottom: 10px;
+    border: 0.2rem solid #FC321A;
+    border-radius: 1.5rem;
+    padding: 0.75em;
+    box-shadow: 0 0 .2rem #F1FF45,
+                0 0 .2rem #F1FF45,
+                0 0 2rem #FC321A,
+                0 0 0.8rem #FC321A,
+                0 0 2.8rem #FC321A,
+                inset 0 0 1.3rem #FC321A;
   }
+
+button {
+    background-color: #1E1E1E;
+    color: #FBFEF9;
+    margin-top: 10px;
+
+    font-size: 25px;
+    font-family: 'Vibur', cursive;
+    text-shadow:
+      /* White glow */
+      0 0 7px #FBFEF9,
+      0 0 21px #FBFEF9,
+      /* Green glow */
+      0 0 42px #FBFEF9,
+      0 0 92px #FBFEF9,
+      0 0 151px #FBFEF9;
+
+    /* remove default behavior */
+    appearance:none;
+  
+    /* usual styles */
+    border: 0.2rem solid #FC321A;
+    border-radius: 1.5rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #F1FF45,
+                0 0 .2rem #F1FF45,
+                0 0 2rem #FC321A,
+                0 0 0.8rem #FC321A,
+                0 0 2.8rem #FC321A,
+                inset 0 0 1.3rem #FC321A;
+  
+  }
+
+.neon-text {
+    font-family: 'Vibur', cursive;
+    text-shadow:
+      /* White glow */
+      0 0 7px #F1FF45,
+      0 0 21px #F1FF45,
+      /* Green glow */
+      0 0 42px #FC321A,
+      0 0 92px #FC321A,
+      0 0 151px #FC321A;
+}
+
+.green {
+    font-family: 'Vibur', cursive;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 92px #0fa,
+        0 0 151px #0fa;
+}
+
+.white {
+    font-family: 'Vibur', cursive;
+    text-shadow:
+    /* White glow */
+    0 0 7px #FBFEF9,
+    0 0 21px #FBFEF9,
+    /* Green glow */
+    0 0 42px #FBFEF9,
+    0 0 92px #FBFEF9,
+    0 0 151px #FBFEF9;
+}
 
 .flex-container {
     display: flex;
     align-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+
+    z-index: 1;
+    position: relative;
+
+    border: 0.2rem solid #FC321A;
+    border-radius: 1.5rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #F1FF45,
+                0 0 .2rem #F1FF45,
+                0 0 2rem #FC321A,
+                0 0 0.8rem #FC321A,
+                0 0 2.8rem #FC321A,
+                inset 0 0 1.3rem #FC321A;
 }
 
 .floating {
@@ -67,13 +151,12 @@ input[type=number] {
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
-	margin-left: 30px;
-	margin-top: 5px;
-
-    height: 150px; 
-    width: 150px; 
     padding: 10px;
     z-index: 1;
+
+    font-size: 50px;
+    color: #FBFEF9;
+    text-align: center;
 }
 
 @keyframes floating {
@@ -84,10 +167,19 @@ input[type=number] {
 
 .platform {
     z-index: 1;
-    background-color: red;
     width: 18em;
     height: 0.3em;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 0.1rem solid #FBFEF9;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 .2rem #FBFEF9,
+                0 0 .2rem #FBFEF9,
+                0 0 2rem #FBFEF9,
+                0 0 0.8rem #FBFEF9,
+                0 0 2.8rem #FBFEF9,
+                inset 0 0 1.3rem #FBFEF9;
 }
 
 
@@ -114,7 +206,7 @@ input[type=number] {
     left: 0;
     margin: 0;
     padding: 0;
-    background: #4e54c8;
+    background: #1E1E1E;
     overflow: hidden;
     z-index: 0;
 }
@@ -124,10 +216,9 @@ input[type=number] {
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     animation: animate 19s linear infinite;
 }
-
 
 
 

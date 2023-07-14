@@ -18,23 +18,37 @@ document.getElementById("BMIForm").addEventListener("submit", function(event){
 
       if (BMIRoundDown < 18.5) {
         var FloatIcon = document.getElementById("float");
-        FloatIcon.style.backgroundColor = "orange";
+        FloatIcon.classList.add("neon-text");
+        FloatIcon.classList.remove("green");
         FloatIcon.textContent = "Underweight";
+
+        var Platform = document.getElementById("platform");
+        Platform.classList.add("platform");
 
       } else if (BMIRoundDown >= 18.5 && BMIRoundDown <= 25) {
         var FloatIcon = document.getElementById("float");
-        FloatIcon.style.backgroundColor = "green";
+        FloatIcon.classList.add("green");
         FloatIcon.textContent = "Healthy weight";
+
+        var Platform = document.getElementById("platform");
+        Platform.classList.add("platform");
 
       } else if (BMIRoundDown >= 25 && BMIRoundDown <= 30) {
         var FloatIcon = document.getElementById("float");
-        FloatIcon.style.backgroundColor = "yellow";
+        FloatIcon.classList.add("neon-text");
         FloatIcon.textContent = "Overweight";
+
+        var Platform = document.getElementById("platform");
+        Platform.classList.add("platform");
 
       } else if (BMIRoundDown > 30) {
         var FloatIcon = document.getElementById("float");
-        FloatIcon.style.backgroundColor = "red";
+        FloatIcon.classList.add("neon-text");
         FloatIcon.textContent = "Obese";
+
+        var Platform = document.getElementById("platform");
+        Platform.classList.add("platform");
+
       } 
     }
 );
