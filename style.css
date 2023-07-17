@@ -73,6 +73,7 @@ form {
 input[type=number] {
 
     background-color: #1E1E1E;
+    height: 28px;
     color: #FBFEF9;
     margin-bottom: 10px;
     border: 0.2rem solid #FC321A;
