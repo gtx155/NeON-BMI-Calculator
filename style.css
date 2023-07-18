@@ -10,17 +10,9 @@
 
     z-index: 1;
     position: relative;
-    height: 95dvh;
-
-    border: 0.2rem solid #FC321A;
+    height: 95vh;
     border-radius: 1.5rem;
     padding: 0.4em;
-    box-shadow: 0 0 .2rem #F1FF45,
-                0 0 .2rem #F1FF45,
-                0 0 2rem #FC321A,
-                0 0 0.8rem #FC321A,
-                0 0 2.8rem #FC321A,
-                inset 0 0 1.3rem #FC321A;
 }
 
 .TitleHeading {
@@ -28,30 +20,13 @@
     z-index: 1;
     position: relative;
     margin-bottom: 25px;
+    width: 252px;
 
-    width: 250px;
 
     font-size: 30px;
     font-family: 'Vibur', cursive;
-
-    text-shadow:
-      /* White glow */
-      0 0 7px #FBFEF9,
-      0 0 21px #FBFEF9,
-      /* Green glow */
-      0 0 42px #FBFEF9,
-      0 0 92px #FBFEF9,
-      0 0 151px #FBFEF9;
-
-      border: 0.2rem solid #FC321A;
-      border-radius: 1.5rem;
-      padding: 0.4em;
-      box-shadow: 0 0 .2rem #F1FF45,
-                  0 0 .2rem #F1FF45,
-                  0 0 2rem #FC321A,
-                  0 0 0.8rem #FC321A,
-                  0 0 2.8rem #FC321A,
-                  inset 0 0 1.3rem #FC321A;
+    border-radius: 1.5rem;
+    padding: 15px;
 }
 
 h1 {
@@ -59,8 +34,18 @@ h1 {
     z-index: 1;
     position: relative;
 
-    font-size: 30px;
+
     color: #FBFEF9;
+    font-family: 'Vibur', cursive;
+    text-shadow:
+
+    0 0 7px #FBFEF9,
+    0 0 21px #FBFEF9,
+
+    0 0 42px #FBFEF9,
+    0 0 92px #FBFEF9,
+    0 0 151px #FBFEF9;
+    
 }
 
 form {
@@ -76,15 +61,8 @@ input[type=number] {
     height: 28px;
     color: #FBFEF9;
     margin-bottom: 10px;
-    border: 0.2rem solid #FC321A;
     border-radius: 1.5rem;
     padding: 0.75em;
-    box-shadow: 0 0 .2rem #F1FF45,
-                0 0 .2rem #F1FF45,
-                0 0 2rem #FC321A,
-                0 0 0.8rem #FC321A,
-                0 0 2.8rem #FC321A,
-                inset 0 0 1.3rem #FC321A;
   }
 
   input[type=number]::-webkit-inner-spin-button {
@@ -97,48 +75,48 @@ input[type=number] {
 
 button {
     background-color: #1E1E1E;
-    color: #FBFEF9;
+    color: #FBFEF9; 
     margin-top: 10px;
     margin-bottom: 25px;
 
-    font-size: 25px;
-    font-family: 'Vibur', cursive;
     text-shadow:
+    0 0 7px #FBFEF9,
+    0 0 21px #FBFEF9,
 
-      0 0 7px #FBFEF9,
-      0 0 21px #FBFEF9,
+    0 0 42px #FBFEF9,
+    0 0 92px #FBFEF9,
+    0 0 151px #FBFEF9;
 
-      0 0 42px #FBFEF9,
-      0 0 92px #FBFEF9,
-      0 0 151px #FBFEF9;
-
-    /* remove default behavior */
+    font-size: 25px;
     appearance:none;
-  
-    /* usual styles */
-    border: 0.2rem solid #FC321A;
     border-radius: 1.5rem;
     padding: 0.4em;
+    font-family: 'Vibur', cursive;
+  
+  }
+
+/*Themes elm*/
+  .argon {
+    border: 0.2rem solid #F9A8FC;
+    box-shadow: 0 0 .2rem #F9A8FC,
+                0 0 .2rem #F9A8FC,
+                0 0 2rem #A850F0,
+                0 0 0.8rem #A850F0,
+                0 0 2.8rem #A850F0,
+                inset 0 0 1.3rem #A850F0;
+}
+
+.neon {
+    border: 0.2rem solid #FC321A;
     box-shadow: 0 0 .2rem #F1FF45,
                 0 0 .2rem #F1FF45,
                 0 0 2rem #FC321A,
                 0 0 0.8rem #FC321A,
                 0 0 2.8rem #FC321A,
                 inset 0 0 1.3rem #FC321A;
-  
-  }
-
-.neon-text {
-    font-family: 'Vibur', cursive;
-    text-shadow:
-
-      0 0 7px #F1FF45,
-      0 0 21px #F1FF45,
-
-      0 0 42px #FC321A,
-      0 0 92px #FC321A,
-      0 0 151px #FC321A;
 }
+
+
 
 .green {
     font-family: 'Vibur', cursive;
@@ -148,18 +126,6 @@ button {
         0 0 42px #0fa,
         0 0 92px #0fa,
         0 0 151px #0fa;
-}
-
-.white {
-    font-family: 'Vibur', cursive;
-    text-shadow:
-
-    0 0 7px #FBFEF9,
-    0 0 21px #FBFEF9,
-
-    0 0 42px #FBFEF9,
-    0 0 92px #FBFEF9,
-    0 0 151px #FBFEF9;
 }
 
 .red {
@@ -198,46 +164,6 @@ button {
     0 0 151px #FC8427;
 }
 
-.argon {
-    font-family: 'Vibur', cursive;
-    text-shadow:
-
-    0 0 7px #F9A8FC,
-    0 0 21px #F9A8FC,
-
-    0 0 42px #A850F0,
-    0 0 92px #A850F0,
-    0 0 151px #A850F0;
-
-    border: 0.2rem solid #F9A8FC;
-    box-shadow: 0 0 .2rem #F9A8FC,
-                0 0 .2rem #F9A8FC,
-                0 0 2rem #A850F0,
-                0 0 0.8rem #A850F0,
-                0 0 2.8rem #A850F0,
-                inset 0 0 1.3rem #A850F0;
-}
-
-.neon {
-    font-family: 'Vibur', cursive;
-    text-shadow:
-
-    0 0 7px #F1FF45,
-    0 0 21px #F1FF45,
-
-    0 0 42px #FC321A,
-    0 0 92px #FC321A,
-    0 0 151px #FC321A;
-
-    border: 0.2rem solid #FC321A;
-    box-shadow: 0 0 .2rem #F1FF45,
-                0 0 .2rem #F1FF45,
-                0 0 2rem #FC321A,
-                0 0 0.8rem #FC321A,
-                0 0 2.8rem #FC321A,
-                inset 0 0 1.3rem #FC321A;
-}
-
 .floating {
 	animation-name: floating;
 	animation-duration: 3s;
@@ -259,7 +185,7 @@ button {
 
 .platform {
     z-index: 1;
-    width: 18em;
+    width: 17em;
     height: 0.3em;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -315,7 +241,25 @@ button {
     cursor: pointer;
 }
 
-
+.atomic-number {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
+.element-symbol {
+    position: relative;
+    top: 60px;
+    left: 80px;
+    font-size: 70px;
+    color: purple;
+}
+.atomic-mass {
+    position: relative;
+    top: 80px;
+    left: 85px;
+    font-size: 20px;
+}
 
 .background li:nth-child(0) {
     left: 59%;

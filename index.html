@@ -8,8 +8,24 @@
     <script defer src="script.js"></script>
 </head>
 <body>
+    <div class="flex-container neon" name="themed">
+        <h1 class="TitleHeading neon" name="themed">NeON<br> BMI Calculator</h1>
+        <form id="BMIForm">
+            <input type="number" min="1" step="1" id="heightInput" name="themed" class="neon" placeholder="Height (cm)"><br>
+            <input type="number" min="1" step="1" id="weightInput" name="themed" class="neon" placeholder="Weight (kg)"><br>
+            <button type="submit" class="neon" name="themed">Submit</button>
+          </form>
+        <h1 id="BMIText"></h1>
+        <div id="float" class="floating"></div>
+        <div id="platform"></div>
+    </div>
+
     <ul class="background">
-        <li>Argon</li>
+        <li>
+            <div class="atomic-number">18</div>
+            <div class="element-symbol">Ar</div>
+            <div class="atomic-mass">39.948</div>
+        </li>
         <li>Neon</li>
         <li>3</li>
         <li>4</li>
@@ -20,17 +36,5 @@
         <li>9</li>
         <li>10</li>
      </ul>
-    <div class="flex-container">
-        <h1 class="TitleHeading">NeON<br> BMI Calculator</h1>
-        <form id="BMIForm">
-            <input type="number" min="1" step="1" id="heightInput" placeholder="Height (cm)"><br>
-            <input type="number" min="1" step="1" id="weightInput" placeholder="Weight (kg)"><br>
-            <button type="submit">Submit</button>
-          </form>
-        <h1 id="BMIText" class="white"></h1>
-        <div id="float" class="floating"></div>
-        <div id="platform"></div>
-    </div>
-
 </body>
 </html>

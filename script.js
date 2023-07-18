@@ -57,17 +57,30 @@ document.getElementById("BMIForm").addEventListener("submit", function(event){
 
 
 const listItem1 = document.querySelector('.background li:nth-child(1)');
+const ThemedElmSelector = document.getElementsByName("themed");
 
 listItem1.addEventListener('click', function() {
 listItem1.classList.add("argon");
-listItem1.style.backgroundColor = 'purple';
+listItem1.style.backgroundColor = '#A850F0';
+
+
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("neon");
+  element.classList.add("argon");
+});
+
 });
 
 const listItem2 = document.querySelector('.background li:nth-child(2)');
 
 listItem2.addEventListener('click', function() {
 listItem2.classList.add("neon");
-listItem2.style.backgroundColor = 'red';
+listItem2.style.backgroundColor = '#FC321A';
+
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon");
+  element.classList.add("neon");
+});
 });
 
 const listItem3 = document.querySelector('.background li:nth-child(3)');
