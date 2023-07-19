@@ -242,91 +242,96 @@ button {
 }
 
 .atomic-number {
-    position: relative;
-    top: 20px;
-    left: 20px;
-    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 1.3em;
 }
 .element-symbol {
-    position: relative;
-    top: 60px;
-    left: 80px;
-    font-size: 70px;
-    color: purple;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 3.5em;
 }
 .atomic-mass {
-    position: relative;
-    top: 80px;
-    left: 85px;
-    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    font-size: 1em;
 }
 
-.background li:nth-child(0) {
+.background li:nth-child(1) {
     left: 59%;
     width: 190px;
     height: 190px;
     bottom: -190px;
     animation-delay: 1s;
     z-index: 1;
+    font-size: 20px;
     
 }
-.background li:nth-child(1) {
+.background li:nth-child(2) {
     left: 22%;
     width: 223px;
     height: 223px;
     bottom: -223px;
     animation-delay: 1s;
-}
-.background li:nth-child(2) {
-    left: 12%;
-    width: 79px;
-    height: 79px;
-    bottom: -79px;
-    animation-delay: 1s;
+    font-size: 20px;
 }
 .background li:nth-child(3) {
+    left: 12%;
+    width: 83px;
+    height: 83px;
+    bottom: -79px;
+    animation-delay: 1s;
+    font-size: 8px;
+}
+.background li:nth-child(4) {
     left: 15%;
     width: 119px;
     height: 119px;
     bottom: -119px;
     animation-delay: 1s;
+    font-size: 15px;
 }
-.background li:nth-child(4) {
+.background li:nth-child(5) {
     left: 48%;
     width: 168px;
     height: 168px;
     bottom: -168px;
     animation-delay: 3s;
+    font-size: 18px;
 }
-.background li:nth-child(5) {
+.background li:nth-child(6) {
     left: 12%;
     width: 190px;
     height: 190px;
     bottom: -190px;
     animation-delay: 20s;
+    font-size: 20px;
 }
-.background li:nth-child(6) {
+.background li:nth-child(7) {
     left: 27%;
     width: 177px;
     height: 177px;
     bottom: -177px;
     animation-delay: 1s;
 }
-.background li:nth-child(7) {
+.background li:nth-child(8) {
     left: 66%;
     width: 235px;
     height: 235px;
     bottom: -235px;
     animation-delay: 33s;
 }
-.background li:nth-child(8) {
+.background li:nth-child(9) {
     left: 88%;
     width: 102px;
     height: 102px;
     bottom: -102px;
     animation-delay: 21s;
 }
-.background li:nth-child(9) {
+.background li:nth-child(10) {
     left: 24%;
     width: 215px;
     height: 215px;

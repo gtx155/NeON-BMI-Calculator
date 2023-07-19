@@ -124,3 +124,9 @@ const listItem9 = document.querySelector('.background li:nth-child(9)');
 listItem9.addEventListener('click', function() {
 listItem9.style.backgroundColor = 'teal';
 });
+
+const listItem10 = document.querySelector('.background li:nth-child(10)');
+
+listItem10.addEventListener('click', function() {
+listItem10.style.backgroundColor = 'black';
+});
