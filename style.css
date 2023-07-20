@@ -304,6 +304,7 @@ button {
     pointer-events: auto;
     cursor: pointer;
     user-select: none;
+    -webkit-user-select: none; /* Safari */
     font-family: 'Roboto', sans-serif;
     border: 0.2rem solid#FBFEF9BF;
     will-change: transform, opacity, border-radius;
