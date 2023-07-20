@@ -65,7 +65,7 @@ argon.addEventListener('click', function() {
   argon.style.backgroundColor = '#A850F0';
 
 [...ThemedElmSelector].forEach(element => {
-  element.classList.remove("neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium");
+  element.classList.remove("neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium", "cesium");
   element.classList.add("argon");
 });
 

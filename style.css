@@ -97,110 +97,16 @@ button {
   
   }
 
-/*Themes elm*/
-.argon {
-    border: 0.2rem solid #F9A8FC;
-    box-shadow: 0 0 .2rem #F9A8FC,
-                0 0 .2rem #F9A8FC,
-                0 0 2rem #A850F0,
-                0 0 0.8rem #A850F0,
-                0 0 2.8rem #A850F0,
-                inset 0 0 1.3rem #A850F0;
-}
-.neon {
-    border: 0.2rem solid #F1FF45;
-    box-shadow: 0 0 .2rem #F1FF45,
-                0 0 .2rem #F1FF45,
-                0 0 2rem #FC321A,
-                0 0 0.8rem #FC321A,
-                0 0 2.8rem #FC321A,
-                inset 0 0 1.3rem #FC321A;
-}
-.radon {
-    border: 0.2rem solid#F5838B;
-    box-shadow: 0 0 .2rem #F5838B,
-                0 0 .2rem #F5838B,
-                0 0 2rem #E81828,
-                0 0 0.8rem #E81828,
-                0 0 2.8rem #E81828,
-                inset 0 0 1.3rem #E81828;
-}
-.cesium {
-    border: 0.2rem solid#DE73CD;
-    box-shadow: 0 0 .2rem #DE73CD,
-                0 0 .2rem #DE73CD,
-                0 0 2rem #AEB4FF,
-                0 0 0.8rem #AEB4FF,
-                0 0 2.8rem #AEB4FF,
-                inset 0 0 1.3rem #AEB4FF;
-} 
-.nitrogen {
-    border: 0.2rem solid#FF7BD1;
-    box-shadow: 0 0 .2rem #FF7BD1,
-                0 0 .2rem #FF7BD1,
-                0 0 2rem #B83579,
-                0 0 0.8rem #B83579,
-                0 0 2.8rem #B83579,
-                inset 0 0 1.3rem #B83579;
-}
-.mercury-vapor {
-    border: 0.2rem solid#70FDF2;
-    box-shadow: 0 0 .2rem #70FDF2,
-                0 0 .2rem #70FDF2,
-                0 0 2rem #52E896,
-                0 0 0.8rem #52E896,
-                0 0 2.8rem #52E896,
-                inset 0 0 1.3rem #52E896;
-} 
-.hydrogen {
-    border: 0.2rem solid#E5BBF9;
-    box-shadow: 0 0 .2rem #E5BBF9,
-                0 0 .2rem #E5BBF9,
-                0 0 2rem #E5B1F5,
-                0 0 0.8rem #E5B1F5,
-                0 0 2.8rem #E5B1F5,
-                inset 0 0 1.3rem #E5B1F5;
-}
-.xenon {
-    border: 0.2rem solid#BFDEFF;
-    box-shadow: 0 0 .2rem #BFDEFF,
-                0 0 .2rem #BFDEFF,
-                0 0 2rem #4467B2,
-                0 0 0.8rem #4467B2,
-                0 0 2.8rem #4467B2,
-                inset 0 0 1.3rem #4467B2;
-}
-.krypton {
-    border: 0.2rem solid#f3ecef;
-    box-shadow: 0 0 .2rem #f3ecef,
-                0 0 .2rem #f3ecef,
-                0 0 2rem #C2B3C8,
-                0 0 0.8rem #C2B3C8,
-                0 0 2.8rem #C2B3C8,
-                inset 0 0 1.3rem #C2B3C8;
-}
-.helium {
-    border: 0.2rem solid#FF896B;
-    box-shadow: 0 0 .2rem #FF896B,
-                0 0 .2rem #FF896B,
-                0 0 2rem #D5443E,
-                0 0 0.8rem #D5443E,
-                0 0 2.8rem #D5443E,
-                inset 0 0 1.3rem #D5443E;
-}
-
-
-
+/*BMIText colors*/
 .green {
     font-family: 'Vibur', cursive;
     text-shadow:
-        0 0 7px #fff,
-        0 0 21px #fff,
+        0 0 7px #FBFEF9,
+        0 0 21px #FBFEF9,
         0 0 42px #0fa,
         0 0 92px #0fa,
         0 0 151px #0fa;
 }
-
 .red {
     font-family: 'Vibur', cursive;
     text-shadow:
@@ -212,7 +118,6 @@ button {
     0 0 92px #FC321A,
     0 0 151px #FC321A;
 }
-
 .yellow {
     font-family: 'Vibur', cursive;
     text-shadow:
@@ -224,7 +129,6 @@ button {
     0 0 92px #F1FF45,
     0 0 151px #F1FF45;
 }
-
 .orange {
     font-family: 'Vibur', cursive;
     text-shadow:
@@ -275,6 +179,98 @@ button {
 
 
 
+/*Themes elm*/
+.argon {
+    border: 0.2rem solid #F9A8FC !important;
+    box-shadow: 0 0 .2rem #F9A8FC,
+                0 0 .2rem #F9A8FC,
+                0 0 2rem #A850F0,
+                0 0 0.8rem #A850F0,
+                0 0 2.8rem #A850F0,
+                inset 0 0 1.3rem #A850F0;
+}
+.neon {
+    border: 0.2rem solid #F1FF45 !important;
+    box-shadow: 0 0 .2rem #F1FF45,
+                0 0 .2rem #F1FF45,
+                0 0 2rem #FC321A,
+                0 0 0.8rem #FC321A,
+                0 0 2.8rem #FC321A,
+                inset 0 0 1.3rem #FC321A;
+}
+.radon {
+    border: 0.2rem solid#F5838B !important;
+    box-shadow: 0 0 .2rem #F5838B,
+                0 0 .2rem #F5838B,
+                0 0 2rem #E81828,
+                0 0 0.8rem #E81828,
+                0 0 2.8rem #E81828,
+                inset 0 0 1.3rem #E81828;
+}
+.cesium {
+    border: 0.2rem solid#DE73CD !important;
+    box-shadow: 0 0 .2rem #DE73CD,
+                0 0 .2rem #DE73CD,
+                0 0 2rem #AEB4FF,
+                0 0 0.8rem #AEB4FF,
+                0 0 2.8rem #AEB4FF,
+                inset 0 0 1.3rem #AEB4FF;
+} 
+.nitrogen {
+    border: 0.2rem solid#FF7BD1 !important;
+    box-shadow: 0 0 .2rem #FF7BD1,
+                0 0 .2rem #FF7BD1,
+                0 0 2rem #B83579,
+                0 0 0.8rem #B83579,
+                0 0 2.8rem #B83579,
+                inset 0 0 1.3rem #B83579;
+}
+.mercury-vapor {
+    border: 0.2rem solid#70FDF2 !important;
+    box-shadow: 0 0 .2rem #70FDF2,
+                0 0 .2rem #70FDF2,
+                0 0 2rem #52E896,
+                0 0 0.8rem #52E896,
+                0 0 2.8rem #52E896,
+                inset 0 0 1.3rem #52E896;
+} 
+.hydrogen {
+    border: 0.2rem solid#E5BBF9 !important;
+    box-shadow: 0 0 .2rem #E5BBF9,
+                0 0 .2rem #E5BBF9,
+                0 0 2rem #E5B1F5,
+                0 0 0.8rem #E5B1F5,
+                0 0 2.8rem #E5B1F5,
+                inset 0 0 1.3rem #E5B1F5;
+}
+.xenon {
+    border: 0.2rem solid#BFDEFF !important;
+    box-shadow: 0 0 .2rem #BFDEFF,
+                0 0 .2rem #BFDEFF,
+                0 0 2rem #4467B2,
+                0 0 0.8rem #4467B2,
+                0 0 2.8rem #4467B2,
+                inset 0 0 1.3rem #4467B2;
+}
+.krypton {
+    border: 0.2rem solid#f3ecef !important;
+    box-shadow: 0 0 .2rem #f3ecef,
+                0 0 .2rem #f3ecef,
+                0 0 2rem #C2B3C8,
+                0 0 0.8rem #C2B3C8,
+                0 0 2.8rem #C2B3C8,
+                inset 0 0 1.3rem #C2B3C8;
+}
+.helium {
+    border: 0.2rem solid#FF896B !important;
+    box-shadow: 0 0 .2rem #FF896B,
+                0 0 .2rem #FF896B,
+                0 0 2rem #D5443E,
+                0 0 0.8rem #D5443E,
+                0 0 2.8rem #D5443E,
+                inset 0 0 1.3rem #D5443E;
+}
+
 /*Background*/
 @keyframes animate {
     0%{
@@ -310,6 +306,7 @@ button {
     pointer-events: auto;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
+    border: 0.2rem solid#FBFEF9BF;
 }
 
 .background li:hover {
@@ -347,41 +344,40 @@ button {
     left: 62%;
     width: 190px;
     height: 190px;
-    bottom: -190px;
+    bottom: -196px;
     animation-delay: 1s;
-    z-index: 1;
     font-size: 20px;
 }
 .background li:nth-child(2) {
     left: 22%;
     width: 223px;
     height: 223px;
-    bottom: -223px;
-    animation-delay: 1.3s;
+    bottom: -230px;
+    animation-delay: 1.2s;
     font-size: 20px;
 }
 .background li:nth-child(3) {
     left: 12%;
     width: 83px;
     height: 83px;
-    bottom: -79px;
-    animation-delay: 1.5s;
+    bottom: -90px;
+    animation-delay: 1.1s;
     font-size: 8px;
 }
 .background li:nth-child(4) {
     left: 15%;
     width: 119px;
     height: 119px;
-    bottom: -119px;
-    animation-delay: 2s;
+    bottom: -126px;
+    animation-delay: 3s;
     font-size: 15px;
 }
 .background li:nth-child(5) {
     left: 48%;
     width: 168px;
     height: 168px;
-    bottom: -168px;
-    animation-delay: 3s;
+    bottom: -174px;
+    animation-delay: 3.5s;
     font-size: 18px;
 }
 .background li:nth-child(6) {
@@ -389,47 +385,122 @@ button {
     width: 223px;
     height: 223px;
     bottom: -300px;
-    animation-delay: 18s;
+    animation-delay: 7s;
     font-size: 20px;
 }
 .background li:nth-child(7) {
     left: 31%;
     width: 177px;
     height: 177px;
-    bottom: -177px;
-    animation-delay: 21s;
+    bottom: -184px;
+    animation-delay: 12s;
     font-size: 18px;
 }
 .background li:nth-child(8) {
-    left: 72%;
+    left: 6%;
     width: 223px;
     height: 223px;
-    bottom: -235px;
-    animation-delay: 21s;
+    bottom: -268px;
+    animation-delay: 26s;
     font-size: 20px;
 }
 .background li:nth-child(9) {
-    left: 88%;
+    left: 64%;
     width: 102px;
     height: 102px;
-    bottom: -102px;
-    animation-delay: 27s;
+    bottom: -109px;
+    animation-delay: 13s;
     font-size: 11px;
 }
 .background li:nth-child(10) {
-    left: 24%;
+    left: 35%;
     width: 177px;
     height: 177px;
     bottom: -215px;
-    animation-delay: 33s;
+    animation-delay: 17s;
     font-size: 18px;
 }
 
 /* Media query for mobile screens */
-/*@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .background li:nth-child(1) {
-        width: 90px;
-        height: 90px;
-        font-size: 0.8rem;
+        left: 62%;
+        width: calc(190px / 2);
+        height: calc(190px / 2);
+        font-size: calc(20px / 2);
+        bottom: -196px;
+        animation-delay: 1s;
     }
-  }*/
+    .background li:nth-child(2) {
+        left: 22%;
+        width: calc(223px / 2);
+        height: calc(223px / 2);
+        font-size: calc(20px / 2);
+        bottom: -230px;
+        animation-delay: 1.2s;
+    }
+    .background li:nth-child(3) {
+        left: 12%;
+        width: calc(83px / 2);
+        height: calc(83px / 2);
+        font-size: calc(8px / 2);
+        bottom: -90px;
+        animation-delay: 1.1s;
+    }
+    .background li:nth-child(4) {
+        left: 15%;
+        width: calc(119px / 2);
+        height: calc(119px / 2);
+        font-size: calc(15px / 2);
+        bottom: -126px;
+        animation-delay: 3s;
+    }
+    .background li:nth-child(5) {
+        left: 48%;
+        width: calc(168px / 2);
+        height: calc(168px / 2);
+        font-size: calc(18px / 2);
+        bottom: -174px;
+        animation-delay: 3.5s;
+    }
+    .background li:nth-child(6) {
+        left: 82%;
+        width: calc(223px / 2);
+        height: calc(223px / 2);
+        font-size: calc(20px / 2);
+        bottom: -300px;
+        animation-delay: 7s;
+    }
+    .background li:nth-child(7) {
+        left: 31%;
+        width: calc(177px / 2);
+        height: calc(177px / 2);
+        font-size: calc(18px / 2);
+        bottom: -184px;
+        animation-delay: 12s;
+    }
+    .background li:nth-child(8) {
+        left: 6%;
+        width: calc(223px / 2);
+        height: calc(223px / 2);
+        font-size: calc(20px / 2);
+        bottom: -268px;
+        animation-delay: 26s;
+    }
+    .background li:nth-child(9) {
+        left: 64%;
+        width: calc(102px / 2);
+        height: calc(102px / 2);
+        font-size: calc(11px / 2);
+        bottom: -109px;
+        animation-delay: 13s;
+    }
+    .background li:nth-child(10) {
+        left: 35%;
+        width: calc(177px / 2);
+        height: calc(177px / 2);
+        font-size: calc(18px / 2);
+        bottom: -215px;
+        animation-delay: 17s;
+    }
+  }
