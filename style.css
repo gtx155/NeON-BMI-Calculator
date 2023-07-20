@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
 .flex-container {
@@ -52,7 +53,7 @@ form {
     text-align: center;
     z-index: 1;
     position: relative;
-    pointer-events: auto
+    pointer-events: auto;
 }
 
 input[type=number] {
@@ -63,6 +64,7 @@ input[type=number] {
     margin-bottom: 10px;
     border-radius: 1.5rem;
     padding: 0.75em;
+    font-family: 'Roboto', sans-serif;
   }
 
   input[type=number]::-webkit-inner-spin-button {
@@ -96,7 +98,7 @@ button {
   }
 
 /*Themes elm*/
-  .argon {
+.argon {
     border: 0.2rem solid #F9A8FC;
     box-shadow: 0 0 .2rem #F9A8FC,
                 0 0 .2rem #F9A8FC,
@@ -105,15 +107,86 @@ button {
                 0 0 2.8rem #A850F0,
                 inset 0 0 1.3rem #A850F0;
 }
-
 .neon {
-    border: 0.2rem solid #FC321A;
+    border: 0.2rem solid #F1FF45;
     box-shadow: 0 0 .2rem #F1FF45,
                 0 0 .2rem #F1FF45,
                 0 0 2rem #FC321A,
                 0 0 0.8rem #FC321A,
                 0 0 2.8rem #FC321A,
                 inset 0 0 1.3rem #FC321A;
+}
+.radon {
+    border: 0.2rem solid#F5838B;
+    box-shadow: 0 0 .2rem #F5838B,
+                0 0 .2rem #F5838B,
+                0 0 2rem #E81828,
+                0 0 0.8rem #E81828,
+                0 0 2.8rem #E81828,
+                inset 0 0 1.3rem #E81828;
+}
+.cesium {
+    border: 0.2rem solid#DE73CD;
+    box-shadow: 0 0 .2rem #DE73CD,
+                0 0 .2rem #DE73CD,
+                0 0 2rem #AEB4FF,
+                0 0 0.8rem #AEB4FF,
+                0 0 2.8rem #AEB4FF,
+                inset 0 0 1.3rem #AEB4FF;
+} 
+.nitrogen {
+    border: 0.2rem solid#FF7BD1;
+    box-shadow: 0 0 .2rem #FF7BD1,
+                0 0 .2rem #FF7BD1,
+                0 0 2rem #B83579,
+                0 0 0.8rem #B83579,
+                0 0 2.8rem #B83579,
+                inset 0 0 1.3rem #B83579;
+}
+.mercury-vapor {
+    border: 0.2rem solid#70FDF2;
+    box-shadow: 0 0 .2rem #70FDF2,
+                0 0 .2rem #70FDF2,
+                0 0 2rem #52E896,
+                0 0 0.8rem #52E896,
+                0 0 2.8rem #52E896,
+                inset 0 0 1.3rem #52E896;
+} 
+.hydrogen {
+    border: 0.2rem solid#E5BBF9;
+    box-shadow: 0 0 .2rem #E5BBF9,
+                0 0 .2rem #E5BBF9,
+                0 0 2rem #E5B1F5,
+                0 0 0.8rem #E5B1F5,
+                0 0 2.8rem #E5B1F5,
+                inset 0 0 1.3rem #E5B1F5;
+}
+.xenon {
+    border: 0.2rem solid#BFDEFF;
+    box-shadow: 0 0 .2rem #BFDEFF,
+                0 0 .2rem #BFDEFF,
+                0 0 2rem #4467B2,
+                0 0 0.8rem #4467B2,
+                0 0 2.8rem #4467B2,
+                inset 0 0 1.3rem #4467B2;
+}
+.krypton {
+    border: 0.2rem solid#f3ecef;
+    box-shadow: 0 0 .2rem #f3ecef,
+                0 0 .2rem #f3ecef,
+                0 0 2rem #C2B3C8,
+                0 0 0.8rem #C2B3C8,
+                0 0 2.8rem #C2B3C8,
+                inset 0 0 1.3rem #C2B3C8;
+}
+.helium {
+    border: 0.2rem solid#FF896B;
+    box-shadow: 0 0 .2rem #FF896B,
+                0 0 .2rem #FF896B,
+                0 0 2rem #D5443E,
+                0 0 0.8rem #D5443E,
+                0 0 2.8rem #D5443E,
+                inset 0 0 1.3rem #D5443E;
 }
 
 
@@ -212,7 +285,7 @@ button {
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+        border-radius: 40%;
     }
 }
 
@@ -232,50 +305,59 @@ button {
 .background li {
     position: absolute;
     display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.3);
+    background: #88888866;
     animation: animate 20s linear infinite;
     pointer-events: auto;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background li:hover {
+    background-color: #FBFEF9BF;
 }
 
 .atomic-number {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 12%;
+    left: 12%;
     font-size: 1.3em;
 }
 .element-symbol {
     position: absolute;
-    top: 30%;
-    left: 30%;
-    font-size: 3.5em;
+    top: 25%;
+    left: 27%;
+    font-size: 4em;
 }
 .atomic-mass {
     position: absolute;
     top: 80%;
-    left: 38%;
+    left: 35%;
     font-size: 1em;
 }
 
+.center-elm {
+    padding-left: 0.3em;
+}
+
+.center-am {
+    padding-left: 0.8em;
+}
+
 .background li:nth-child(1) {
-    left: 59%;
+    left: 62%;
     width: 190px;
     height: 190px;
     bottom: -190px;
     animation-delay: 1s;
     z-index: 1;
     font-size: 20px;
-    
 }
 .background li:nth-child(2) {
     left: 22%;
     width: 223px;
     height: 223px;
     bottom: -223px;
-    animation-delay: 1s;
+    animation-delay: 1.3s;
     font-size: 20px;
 }
 .background li:nth-child(3) {
@@ -283,7 +365,7 @@ button {
     width: 83px;
     height: 83px;
     bottom: -79px;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
     font-size: 8px;
 }
 .background li:nth-child(4) {
@@ -291,7 +373,7 @@ button {
     width: 119px;
     height: 119px;
     bottom: -119px;
-    animation-delay: 1s;
+    animation-delay: 2s;
     font-size: 15px;
 }
 .background li:nth-child(5) {
@@ -303,38 +385,51 @@ button {
     font-size: 18px;
 }
 .background li:nth-child(6) {
-    left: 12%;
-    width: 190px;
-    height: 190px;
-    bottom: -190px;
-    animation-delay: 20s;
+    left: 82%;
+    width: 223px;
+    height: 223px;
+    bottom: -300px;
+    animation-delay: 18s;
     font-size: 20px;
 }
 .background li:nth-child(7) {
-    left: 27%;
+    left: 31%;
     width: 177px;
     height: 177px;
     bottom: -177px;
-    animation-delay: 1s;
+    animation-delay: 21s;
+    font-size: 18px;
 }
 .background li:nth-child(8) {
-    left: 66%;
-    width: 235px;
-    height: 235px;
+    left: 72%;
+    width: 223px;
+    height: 223px;
     bottom: -235px;
-    animation-delay: 33s;
+    animation-delay: 21s;
+    font-size: 20px;
 }
 .background li:nth-child(9) {
     left: 88%;
     width: 102px;
     height: 102px;
     bottom: -102px;
-    animation-delay: 21s;
+    animation-delay: 27s;
+    font-size: 11px;
 }
 .background li:nth-child(10) {
     left: 24%;
-    width: 215px;
-    height: 215px;
+    width: 177px;
+    height: 177px;
     bottom: -215px;
-    animation-delay: 27s;
+    animation-delay: 33s;
+    font-size: 18px;
 }
+
+/* Media query for mobile screens */
+/*@media screen and (max-width: 767px) {
+    .background li:nth-child(1) {
+        width: 90px;
+        height: 90px;
+        font-size: 0.8rem;
+    }
+  }*/

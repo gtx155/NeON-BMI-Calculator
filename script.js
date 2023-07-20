@@ -56,77 +56,116 @@ document.getElementById("BMIForm").addEventListener("submit", function(event){
 
 
 
-const listItem1 = document.querySelector('.background li:nth-child(1)');
+//get all the elements that can change theme
 const ThemedElmSelector = document.getElementsByName("themed");
 
-listItem1.addEventListener('click', function() {
-listItem1.classList.add("argon");
-listItem1.style.backgroundColor = '#A850F0';
-
+const argon = document.querySelector('.background li:nth-child(1)');
+argon.addEventListener('click', function() {
+  argon.classList.add("argon");
+  argon.style.backgroundColor = '#A850F0';
 
 [...ThemedElmSelector].forEach(element => {
-  element.classList.remove("neon");
+  element.classList.remove("neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium");
   element.classList.add("argon");
 });
 
 });
 
-const listItem2 = document.querySelector('.background li:nth-child(2)');
-
-listItem2.addEventListener('click', function() {
-listItem2.classList.add("neon");
-listItem2.style.backgroundColor = '#FC321A';
+const neon = document.querySelector('.background li:nth-child(2)');
+neon.addEventListener('click', function() {
+  neon.classList.add("neon");
+  neon.style.backgroundColor = '#FC321A';
 
 [...ThemedElmSelector].forEach(element => {
-  element.classList.remove("argon");
+  element.classList.remove("argon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium", "cesium");
   element.classList.add("neon");
 });
 });
 
-const listItem3 = document.querySelector('.background li:nth-child(3)');
+const helium = document.querySelector('.background li:nth-child(3)');
+helium.addEventListener('click', function() {
+  helium.classList.add("helium");
+  helium.style.backgroundColor = '#D5443E';
 
-listItem3.addEventListener('click', function() {
-listItem3.style.backgroundColor = 'yellow';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "krypton", "cesium");
+  element.classList.add("helium");
+});
 });
 
-const listItem4 = document.querySelector('.background li:nth-child(4)');
+const krypton = document.querySelector('.background li:nth-child(4)');
+krypton.addEventListener('click', function() {
+  krypton.classList.add("krypton");
+  krypton.style.backgroundColor = '#C2B3C8';
 
-listItem4.addEventListener('click', function() {
-listItem4.style.backgroundColor = 'blue';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "helium", "cesium");
+  element.classList.add("krypton");
+});
 });
 
-const listItem5 = document.querySelector('.background li:nth-child(5)');
+const xenon = document.querySelector('.background li:nth-child(5)');
+xenon.addEventListener('click', function() {
+  xenon.classList.add("xenon");
+  xenon.style.backgroundColor = '#4467B2';
 
-listItem5.addEventListener('click', function() {
-listItem5.style.backgroundColor = 'orange';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "krypton", "helium", "cesium");
+  element.classList.add("xenon");
+});
 });
 
-const listItem6 = document.querySelector('.background li:nth-child(6)');
+const hydrogen = document.querySelector('.background li:nth-child(6)');
+hydrogen.addEventListener('click', function() {
+  hydrogen.classList.add("hydrogen");
+  hydrogen.style.backgroundColor = '#E5B1F5';
 
-listItem6.addEventListener('click', function() {
-listItem6.style.backgroundColor = 'aqua';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "radon", "nitrogen", "mercury-vapor", "xenon", "krypton", "helium", "cesium");
+  element.classList.add("hydrogen");
+});
 });
 
-const listItem7 = document.querySelector('.background li:nth-child(7)');
+const mercuryVapor = document.querySelector('.background li:nth-child(7)');
+mercuryVapor.addEventListener('click', function() {
+  mercuryVapor.classList.add("mercury-vapor");
+  mercuryVapor.style.backgroundColor = '#52E896';
 
-listItem7.addEventListener('click', function() {
-listItem7.style.backgroundColor = 'green';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "radon", "nitrogen", "hydrogen", "xenon", "krypton", "helium", "cesium");
+  element.classList.add("mercury-vapor");
+});
 });
 
-const listItem8 = document.querySelector('.background li:nth-child(8)');
+const nitrogen = document.querySelector('.background li:nth-child(8)');
+nitrogen.addEventListener('click', function() {
+  nitrogen.classList.add("nitrogen");
+  nitrogen.style.backgroundColor = '#B83579';
 
-listItem8.addEventListener('click', function() {
-listItem8.style.backgroundColor = 'coral';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "radon", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium", "cesium");
+  element.classList.add("nitrogen");
+});
 });
 
-const listItem9 = document.querySelector('.background li:nth-child(9)');
+const cesium = document.querySelector('.background li:nth-child(9)');
+cesium.addEventListener('click', function() {
+  cesium.classList.add("cesium");
+  cesium.style.backgroundColor = '#AEB4FF';
 
-listItem9.addEventListener('click', function() {
-listItem9.style.backgroundColor = 'teal';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium");
+  element.classList.add("cesium");
+});
 });
 
-const listItem10 = document.querySelector('.background li:nth-child(10)');
+const radon = document.querySelector('.background li:nth-child(10)');
+radon.addEventListener('click', function() {
+  radon.classList.add("radon");
+  radon.style.backgroundColor = '#E81828';
 
-listItem10.addEventListener('click', function() {
-listItem10.style.backgroundColor = 'black';
+[...ThemedElmSelector].forEach(element => {
+  element.classList.remove("argon", "neon", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium", "cesium", "nitrogen");
+  element.classList.add("radon");
+});
 });
