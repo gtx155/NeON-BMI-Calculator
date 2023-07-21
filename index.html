@@ -15,14 +15,20 @@
         <form id="BMIForm">
             <input type="number" min="1" step="1" id="heightInput" name="themed" class="neon" placeholder="Height (cm)"><br>
             <input type="number" min="1" step="1" id="weightInput" name="themed" class="neon" placeholder="Weight (kg)"><br>
-            <button type="submit" class="neon" name="themed">Submit</button>
+            <button type="submit" class="submit-button neon" name="themed">Submit</button>
           </form>
         <h1 id="BMIText"></h1>
         <div id="float" class="floating"></div>
         <div id="platform"></div>
     </div>
 
-    <div class="info-popup">INFO</div>
+    <button class="modal-button open-button neon" name="themed">About</button>
+
+    <dialog class="modal" id="modal" style="z-index: 1;">
+        <h2>Hello</h2>
+        <p>LG Klimatik</p>
+        <button class="modal-button close-button neon" name="themed"></button>
+    </dialog>
     
     <ul class="background">
         <li>
