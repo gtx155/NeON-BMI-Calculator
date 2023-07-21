@@ -1,5 +1,9 @@
 /* Media query for mobile screens */
 @media screen and (max-width: 767px) {
+    .flex-container {
+        height: 85vh;
+        overflow-y: hidden;
+    }
     .background li:nth-child(1) {
         left: 62%;
         width: calc(190px / 2);
