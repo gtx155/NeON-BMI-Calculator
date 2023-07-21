@@ -281,7 +281,7 @@ input[type=number]::-webkit-inner-spin-button {
     
     20%, 24%, 55%, 80%, 84% {        
         box-shadow: none;
-        border: 0.2rem solid#FBFEF9BF;
+        border: 0.2rem solid #FBFEF9BF;
     }    
   }
 
@@ -411,7 +411,7 @@ input[type=number]::-webkit-inner-spin-button {
     width: 177px;
     height: 177px;
     bottom: -184px;
-    animation-delay: 12s;
+    animation-delay: 9s;
     font-size: 18px;
 }
 .background li:nth-child(8) {
@@ -419,7 +419,7 @@ input[type=number]::-webkit-inner-spin-button {
     width: 223px;
     height: 223px;
     bottom: -268px;
-    animation-delay: 26s;
+    animation-delay: 11s;
     font-size: 20px;
 }
 .background li:nth-child(9) {
@@ -435,13 +435,13 @@ input[type=number]::-webkit-inner-spin-button {
     width: 177px;
     height: 177px;
     bottom: -215px;
-    animation-delay: 17s;
+    animation-delay: 15s;
     font-size: 18px;
 }
 
 .modal {
-    height: 500px;
-    width: 400px;
+    height: 400px;
+    width: 500px;
 }
 
 .modal-button {
@@ -449,21 +449,22 @@ input[type=number]::-webkit-inner-spin-button {
     text-align: center;
     padding: 0;
     cursor: pointer;
-    font-size: larger;
+    font-size: 23px;
     opacity: 65%;
     background-color: #1E1E1E;
-    color: wheat;
+    color: #FBFEF9;
     position: absolute;
     z-index: 1;
-    border-radius: 1.5em;
+    border-radius: 40%;
+    border: 0;
     height: 60px;
     width: 60px;
-    right: 2rem;
-    bottom: 2rem;
+    right: 32px;
+    bottom: 32px;
 }
 
 .close-button {
     position: absolute;
-    right: 0.5rem;
-    top: 1rem;
+    right: 20px;
+    top: 20px;
 }
