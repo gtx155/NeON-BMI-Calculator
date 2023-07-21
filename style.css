@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Vibur&display=swap');
 
-
-body {
-    overflow: hidden;
-}
-
 .flex-container {
     display: flex;
     align-content: center;
@@ -25,8 +20,6 @@ body {
     position: relative;
     margin-bottom: 25px;
     width: 252px;
-
-
     font-size: 30px;
     font-family: 'Vibur', cursive;
     border-radius: 1.5rem;
@@ -434,5 +427,5 @@ button {
     height: 50px;
     width: 50px;
     right: 2rem;
-    bottom: 2rem;
+    top: 2rem;
 }
