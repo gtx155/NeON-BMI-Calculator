@@ -1,8 +1,15 @@
 /* Media query for mobile screens */
 @media screen and (max-width: 767px) {
     .flex-container {
-        height: 85vh;
-        overflow-y: hidden;
+        height: 84vh;
+        overflow: hidden;
+    }
+    .modal-button {
+        right: 2rem;
+        bottom: 17vh;
+        height: 30px;
+        width: 30px;
+        font-size: 0.5em;
     }
     .background li:nth-child(1) {
         left: 62%;
