@@ -453,7 +453,7 @@ input[type=number]::-webkit-inner-spin-button {
     opacity: 65%;
     background-color: #1E1E1E;
     color: #FBFEF9;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     border-radius: 40%;
     border: 0;
