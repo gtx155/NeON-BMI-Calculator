@@ -14,10 +14,9 @@ body {
 
     z-index: 1;
     position: relative;
-
+    height: 95vh;
     border-radius: 1.5rem;
     padding: 0.4em;
-    min-height: 100vh;
 }
 
 .TitleHeading {
