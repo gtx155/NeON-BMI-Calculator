@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Vibur&display=swap');
 
+:root {
+    --background: #1E1E1E;
+    --text-color: #FBFEF9;
+}
+
+
 .flex-container {
     display: flex;
     align-content: center;
@@ -30,7 +36,7 @@ h1 {
     text-align: center;
     z-index: 1;
     position: relative;
-    color: #FBFEF9;
+    color: var(--text-color);
     font-family: 'Vibur', cursive;
 
     /*This text-shadow looks pixelated on webkit. Fewer text shadows fix?*/
@@ -51,9 +57,9 @@ form {
 }
 
 input[type=number] {
-    background-color: #1E1E1E;
+    background-color: var(--background);
     height: 28px;
-    color: #FBFEF9;
+    color: var(--text-color);
     margin-bottom: 10px;
     border-radius: 1.5rem;
     padding: 0.75em;
@@ -70,8 +76,8 @@ input[type=number]::-webkit-inner-spin-button {
   }
 
 .submit-button {
-    background-color: #1E1E1E;
-    color: #FBFEF9; 
+    background-color: var(--background);
+    color: var(--text-color); 
     margin-top: 10px;
     margin-bottom: 25px;
     cursor: pointer;
@@ -143,7 +149,7 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 10px;
     z-index: 1;
     font-size: 50px;
-    color: #FBFEF9;
+    color: var(--text-color);
     text-align: center;
     will-change: transform;
 }
@@ -267,7 +273,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* Flickering animation */
 @keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 83%, 86%, 100% {
+    0%, 18%, 22%, 25%, 53%, 57%, 83%, 86% {
   
         border: 0.2rem solid #F9A8FC;
         box-shadow: 0 0 .2rem #F9A8FC,
@@ -279,7 +285,7 @@ input[type=number]::-webkit-inner-spin-button {
     
     }
     
-    20%, 24%, 55%, 80%, 84% {        
+    20%, 24%, 55%, 80%, 84%, 100%{        
         box-shadow: none;
         border: 0.2rem solid #FBFEF9BF;
     }    
@@ -307,7 +313,7 @@ input[type=number]::-webkit-inner-spin-button {
     left: 0;
     margin: 0;
     padding: 0;
-    background: #1E1E1E;
+    background: var(--background);
     overflow: hidden;
     z-index: 0;
     pointer-events: none;
@@ -439,9 +445,15 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 18px;
 }
 
+
+/*Modal pop-up*/
 .modal {
-    height: 400px;
-    width: 500px;
+    height: 70%;
+    width: 75%;
+    border: 0.1rem solid #FBFEF9;
+    border-radius: 1.5rem;
+    background-color: var(--background);
+    color: var(--text-color);
 }
 
 .modal-button {
@@ -451,8 +463,8 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
     font-size: 23px;
     opacity: 65%;
-    background-color: #1E1E1E;
-    color: #FBFEF9;
+    background-color: var(--background);
+    color: var(--text-color);
     position: fixed;
     z-index: 1;
     border-radius: 40%;
@@ -467,4 +479,8 @@ input[type=number]::-webkit-inner-spin-button {
     position: absolute;
     right: 20px;
     top: 20px;
+}
+
+.amoled {
+    --background: #000000;
 }

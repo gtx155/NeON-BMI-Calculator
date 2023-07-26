@@ -182,3 +182,21 @@ openModal.addEventListener('click', () => {
 closeModal.addEventListener('click', () => {
   modal.close();
 })
+
+//AMOLED theme support
+const background = document.querySelector('.background');
+const h1s = document.querySelectorAll('h1');
+const buttons = document.querySelectorAll('button');
+const inputs = document.querySelectorAll('input');
+const dialogs = document.querySelectorAll('dialog');
+
+const toBeAMOLEDS = [...h1s, ...buttons, ...inputs, ...dialogs]; 
+
+
+function toggleAMOLED() {
+  background.classList.toggle('amoled');
+
+  toBeAMOLEDS.forEach(toBeAMOLED => {
+    toBeAMOLED.classList.toggle('amoled');
+  });
+}
