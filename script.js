@@ -200,3 +200,17 @@ function toggleAMOLED() {
     toBeAMOLED.classList.toggle('amoled');
   });
 }
+
+const buttonSubmit = document.querySelector('.submit-button');
+
+const toBeHiddens = [...h1s, ...inputs]; 
+
+//Wallpaper Mode
+function toggleWallpaper() {
+  buttonSubmit.classList.toggle('hide');
+
+  toBeHiddens.forEach(toBeHidden => {
+    toBeHidden.classList.toggle('hide');
+  });
+}
+
