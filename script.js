@@ -1,7 +1,7 @@
 document.getElementById("BMIForm").addEventListener("submit", function(event){
   event.preventDefault();
 
-  let height = document.getElementById("heightInput").value;
+  let height = document.getElementById("heightInput").value; //future: convert 1.5 to 150
   let weight = document.getElementById("weightInput").value;
       
   let heightCalc = (height / 100) ** 2;
@@ -197,7 +197,7 @@ function toggleAMOLED() {
   });
 }
 
-//Wallpaper Mode
+//Wallpaper Mode goes into FULL SCREEN
 const buttonSubmit = document.querySelector('.submit-button');
 const float = document.querySelector('#float');
 const platform = document.querySelector('#platform');
@@ -205,11 +205,26 @@ const platform = document.querySelector('#platform');
 const toBeHiddens = [...h1s, ...inputs]; 
 
 function toggleWallpaper() {
-  buttonSubmit.classList.toggle('hide');
-  float.classList.toggle('hide');
-  platform.classList.toggle('hide');
+  document.documentElement.requestFullscreen();
+  buttonSubmit.classList.add('hide');
+  float.classList.add('hide');
+  platform.classList.add('hide');
 
   toBeHiddens.forEach(toBeHidden => {
-    toBeHidden.classList.toggle('hide');
+    toBeHidden.classList.add('hide');
   });
 }
+
+document.addEventListener("fullscreenchange", () => {
+  if (document.fullscreenElement) {
+    console.log("Is Fullscreen")
+  } else {
+    buttonSubmit.classList.remove('hide');
+    float.classList.remove('hide');
+    platform.classList.remove('hide');
+    
+    toBeHiddens.forEach(toBeHidden => {
+      toBeHidden.classList.remove('hide');
+    });
+  }
+});
