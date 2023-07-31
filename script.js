@@ -198,15 +198,13 @@ function toggleAMOLED() {
 }
 
 //Wallpaper Mode goes into FULL SCREEN
-const buttonSubmit = document.querySelector('.submit-button');
 const float = document.querySelector('#float');
 const platform = document.querySelector('#platform');
 
-const toBeHiddens = [...h1s, ...inputs]; 
+const toBeHiddens = [...h1s, ...inputs, ...buttons]; 
 
 function toggleWallpaper() {
   document.documentElement.requestFullscreen();
-  buttonSubmit.classList.add('hide');
   float.classList.add('hide');
   platform.classList.add('hide');
 
@@ -219,7 +217,6 @@ document.addEventListener("fullscreenchange", () => {
   if (document.fullscreenElement) {
     console.log("Is Fullscreen")
   } else {
-    buttonSubmit.classList.remove('hide');
     float.classList.remove('hide');
     platform.classList.remove('hide');
     
