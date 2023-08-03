@@ -1,32 +1,31 @@
 document.getElementById("BMIForm").addEventListener("submit", function(event){
   event.preventDefault();
-
-  let height = document.getElementById("heightInput").value; //future: convert 1.5 to 150
+  let height = document.getElementById("heightInput").value;
   let weight = document.getElementById("weightInput").value;
-      
-  let heightCalc = (height / 100) ** 2;
-  let bmiResult = weight / heightCalc;
-  
-  let bmiRoundDown = Math.floor(bmiResult * 100) / 100;
 
-  //bmi var to html
-  let htmlBMIVar = "BMI = " + bmiRoundDown;
-  let bmiTextElement = document.getElementById("BMIText");
-  bmiTextElement.innerHTML = htmlBMIVar;
-
-  if (bmiRoundDown < 18.5) {
+  //BMI calcs
+  numberHeight = parseFloat(height);
+  if (!Number.isInteger(numberHeight) && numberHeight < 5) {
+    numberHeight *= 100;
+    let heightCalc = (numberHeight / 100) ** 2;
+    let bmiResult = weight / heightCalc;
+    let bmiRoundDown = Math.floor(bmiResult * 100) / 100;
+    let bmiTextElement = document.getElementById("BMIText");
+    let htmlBMIVar = "BMI = " + bmiRoundDown;
+    bmiTextElement.innerHTML = htmlBMIVar;
+    
+    if (bmiRoundDown < 18.5) {
     var floatIcon = document.getElementById("float");
     floatIcon.classList.remove("green", "red", "yellow");
     floatIcon.classList.add("orange");
     floatIcon.textContent = "Underweight";
 
-    var platform = document.getElementById("platform");
     platform.classList.add("platform");
-  } else if (bmiRoundDown >= 18.5 && bmiRoundDown <= 25) {
-    var floatIcon = document.getElementById("float");
-    floatIcon.classList.remove("orange", "red", "yellow");
-    floatIcon.classList.add("green");
-    floatIcon.textContent = "Healthy weight";
+    } else if (bmiRoundDown >= 18.5 && bmiRoundDown <= 25) {
+      var floatIcon = document.getElementById("float");
+      floatIcon.classList.remove("orange", "red", "yellow");
+      floatIcon.classList.add("green");
+      floatIcon.textContent = "Healthy weight";
 
     var platform = document.getElementById("platform");
     platform.classList.add("platform");
@@ -49,8 +48,52 @@ document.getElementById("BMIForm").addEventListener("submit", function(event){
       var platform = document.getElementById("platform");
       platform.classList.add("platform");
     }
-  }
-);
+    } else {
+      let heightCalc = (numberHeight / 100) ** 2;
+      let bmiResult = weight / heightCalc;
+      let bmiRoundDown = Math.floor(bmiResult * 100) / 100;
+      //bmi var to html on submit
+      let bmiTextElement = document.getElementById("BMIText");
+      let htmlBMIVar = "BMI = " + bmiRoundDown;
+      bmiTextElement.innerHTML = htmlBMIVar;
+      
+      if (bmiRoundDown < 18.5) {
+      var floatIcon = document.getElementById("float");
+      floatIcon.classList.remove("green", "red", "yellow");
+      floatIcon.classList.add("orange");
+      floatIcon.textContent = "Underweight";
+
+      var platform = document.getElementById("platform");
+      platform.classList.add("platform");
+      } else if (bmiRoundDown >= 18.5 && bmiRoundDown <= 25) {
+      var floatIcon = document.getElementById("float");
+      floatIcon.classList.remove("orange", "red", "yellow");
+      floatIcon.classList.add("green");
+      floatIcon.textContent = "Healthy weight";
+
+      var platform = document.getElementById("platform");
+      platform.classList.add("platform");
+
+      } else if (bmiRoundDown >= 25 && bmiRoundDown <= 30) {
+      var floatIcon = document.getElementById("float");
+      floatIcon.classList.remove("orange", "red", "green");
+      floatIcon.classList.add("yellow");
+      floatIcon.textContent = "Overweight";
+
+      var platform = document.getElementById("platform");
+      platform.classList.add("platform");
+
+      } else if (bmiRoundDown > 30) {
+        var floatIcon = document.getElementById("float");
+        floatIcon.classList.remove("orange", "green", "yellow");
+        floatIcon.classList.add("red");
+        floatIcon.textContent = "Obese";
+
+        var platform = document.getElementById("platform");
+        platform.classList.add("platform");
+      }
+    }
+});
 
 //get all the elements that can change theme
 const themedElmSelector = document.getElementsByName("themed");
@@ -204,7 +247,7 @@ const platform = document.querySelector('#platform');
 const toBeHiddens = [...h1s, ...inputs, ...buttons]; 
 
 function toggleWallpaper() {
-  document.documentElement.requestFullscreen();
+  document.documentElement.requestFullscreen(); //add support for firefox, ?webkit?
   float.classList.add('hide');
   platform.classList.add('hide');
 
@@ -215,7 +258,7 @@ function toggleWallpaper() {
 
 document.addEventListener("fullscreenchange", () => {
   if (document.fullscreenElement) {
-    console.log("Is Fullscreen")
+    console.log("Is fullscreen");
   } else {
     float.classList.remove('hide');
     platform.classList.remove('hide');
