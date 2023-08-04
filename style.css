@@ -208,13 +208,13 @@ input[type=number]::-webkit-inner-spin-button {
                 inset 0 0 1.3rem #E81828;
 }
 .cesium {
-    border: 0.2rem solid#DE73CD !important;
-    box-shadow: 0 0 .2rem #DE73CD,
-                0 0 .2rem #DE73CD,
-                0 0 2rem #AEB4FF,
-                0 0 0.8rem #AEB4FF,
-                0 0 2.8rem #AEB4FF,
-                inset 0 0 1.3rem #AEB4FF;
+    border: 0.2rem solid#D578D3 !important;
+    box-shadow: 0 0 .2rem #D578D3,
+                0 0 .2rem #D578D3,
+                0 0 2rem #A183FF,
+                0 0 0.8rem #A183FF,
+                0 0 2.8rem #A183FF,
+                inset 0 0 1.3rem #A183FF;
 } 
 .nitrogen {
     border: 0.2rem solid#FF7BD1 !important;
@@ -450,10 +450,12 @@ input[type=number]::-webkit-inner-spin-button {
 .modal {
     height: 70%;
     width: 75%;
+    padding: 1.8em;
     border: 0.1rem solid #FBFEF9;
     border-radius: 1.5rem;
     background-color: var(--background);
     color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-button {
@@ -475,10 +477,48 @@ input[type=number]::-webkit-inner-spin-button {
     bottom: 32px;
 }
 
+
 .close-button {
     position: absolute;
     right: 20px;
     top: 20px;
+}
+
+.h3-title {
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+
+.p-modal {
+    margin-top: 0px;
+    margin-bottom: 1.1rem;
+}
+
+.mode-button {
+    background-color: var(--background);
+    color: var(--text-color); 
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    text-shadow:
+    0 0 7px #FBFEF9,
+    0 0 21px #FBFEF9,
+
+    0 0 42px #FBFEF9,
+    0 0 92px #FBFEF9,
+    0 0 151px #FBFEF9;
+
+    font-size: 1.3rem;
+    appearance:none;
+    border-radius: 1.5rem;
+    border: 2px solid var(--text-color);
+    padding: 0.4em;
+    font-family: 'Vibur', cursive;
+}
+
+.mode-button:hover {
+    background-color: #FC321A;
 }
 
 .amoled {

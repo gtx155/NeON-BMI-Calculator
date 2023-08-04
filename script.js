@@ -1,98 +1,55 @@
-document.getElementById("BMIForm").addEventListener("submit", function(event){
+// BMI calcs
+function calculateBMI(height, weight) {
+  let numberHeight = parseFloat(height);
+  if (!Number.isInteger(numberHeight) && numberHeight < 5) {
+    numberHeight*=100;
+  }
+  let heightCalc = (numberHeight / 100) ** 2;
+  let bmiResult = weight / heightCalc;
+  return Math.floor(bmiResult * 100) / 100;
+}
+
+// BMI text colors
+function updateBMIStatus(bmiRoundDown, floatIcon, platform) {
+  let bmiStatus = "";
+  let textColor = "";
+
+  if (bmiRoundDown < 18.5) {
+    bmiStatus = "Underweight";
+    textColor = "orange";
+  } else if (bmiRoundDown >= 18.5 && bmiRoundDown <= 25) {
+    bmiStatus = "Healthy weight";
+    textColor = "green";
+  } else if (bmiRoundDown >= 25 && bmiRoundDown <= 30) {
+    bmiStatus = "Overweight";
+    textColor = "yellow";
+  } else if (bmiRoundDown > 30) {
+    bmiStatus = "Obese";
+    textColor = "red";
+  }
+
+  floatIcon.classList.remove("orange", "green", "yellow", "red");
+  floatIcon.classList.add(textColor);
+  floatIcon.textContent = bmiStatus;
+
+  platform.classList.add("platform");
+}
+
+// BMI to html
+document.getElementById("BMIForm").addEventListener("submit", function(event) {
   event.preventDefault();
+
   let height = document.getElementById("heightInput").value;
   let weight = document.getElementById("weightInput").value;
+  let bmiRoundDown = calculateBMI(height, weight);
+  let bmiTextElement = document.getElementById("BMIText");
+  let htmlBMIVar = "BMI = " + bmiRoundDown;
+  bmiTextElement.innerHTML = htmlBMIVar;
 
-  //BMI calcs
-  numberHeight = parseFloat(height);
-  if (!Number.isInteger(numberHeight) && numberHeight < 5) {
-    numberHeight *= 100;
-    let heightCalc = (numberHeight / 100) ** 2;
-    let bmiResult = weight / heightCalc;
-    let bmiRoundDown = Math.floor(bmiResult * 100) / 100;
-    let bmiTextElement = document.getElementById("BMIText");
-    let htmlBMIVar = "BMI = " + bmiRoundDown;
-    bmiTextElement.innerHTML = htmlBMIVar;
-    
-    if (bmiRoundDown < 18.5) {
-    var floatIcon = document.getElementById("float");
-    floatIcon.classList.remove("green", "red", "yellow");
-    floatIcon.classList.add("orange");
-    floatIcon.textContent = "Underweight";
+  let floatIcon = document.getElementById("float");
+  let platform = document.getElementById("platform");
 
-    platform.classList.add("platform");
-    } else if (bmiRoundDown >= 18.5 && bmiRoundDown <= 25) {
-      var floatIcon = document.getElementById("float");
-      floatIcon.classList.remove("orange", "red", "yellow");
-      floatIcon.classList.add("green");
-      floatIcon.textContent = "Healthy weight";
-
-    var platform = document.getElementById("platform");
-    platform.classList.add("platform");
-
-    } else if (bmiRoundDown >= 25 && bmiRoundDown <= 30) {
-    var floatIcon = document.getElementById("float");
-    floatIcon.classList.remove("orange", "red", "green");
-    floatIcon.classList.add("yellow");
-    floatIcon.textContent = "Overweight";
-
-    var platform = document.getElementById("platform");
-    platform.classList.add("platform");
-
-    } else if (bmiRoundDown > 30) {
-      var floatIcon = document.getElementById("float");
-      floatIcon.classList.remove("orange", "green", "yellow");
-      floatIcon.classList.add("red");
-      floatIcon.textContent = "Obese";
-
-      var platform = document.getElementById("platform");
-      platform.classList.add("platform");
-    }
-    } else {
-      let heightCalc = (numberHeight / 100) ** 2;
-      let bmiResult = weight / heightCalc;
-      let bmiRoundDown = Math.floor(bmiResult * 100) / 100;
-      //bmi var to html on submit
-      let bmiTextElement = document.getElementById("BMIText");
-      let htmlBMIVar = "BMI = " + bmiRoundDown;
-      bmiTextElement.innerHTML = htmlBMIVar;
-      
-      if (bmiRoundDown < 18.5) {
-      var floatIcon = document.getElementById("float");
-      floatIcon.classList.remove("green", "red", "yellow");
-      floatIcon.classList.add("orange");
-      floatIcon.textContent = "Underweight";
-
-      var platform = document.getElementById("platform");
-      platform.classList.add("platform");
-      } else if (bmiRoundDown >= 18.5 && bmiRoundDown <= 25) {
-      var floatIcon = document.getElementById("float");
-      floatIcon.classList.remove("orange", "red", "yellow");
-      floatIcon.classList.add("green");
-      floatIcon.textContent = "Healthy weight";
-
-      var platform = document.getElementById("platform");
-      platform.classList.add("platform");
-
-      } else if (bmiRoundDown >= 25 && bmiRoundDown <= 30) {
-      var floatIcon = document.getElementById("float");
-      floatIcon.classList.remove("orange", "red", "green");
-      floatIcon.classList.add("yellow");
-      floatIcon.textContent = "Overweight";
-
-      var platform = document.getElementById("platform");
-      platform.classList.add("platform");
-
-      } else if (bmiRoundDown > 30) {
-        var floatIcon = document.getElementById("float");
-        floatIcon.classList.remove("orange", "green", "yellow");
-        floatIcon.classList.add("red");
-        floatIcon.textContent = "Obese";
-
-        var platform = document.getElementById("platform");
-        platform.classList.add("platform");
-      }
-    }
+  updateBMIStatus(bmiRoundDown, floatIcon, platform);
 });
 
 //get all the elements that can change theme
@@ -241,14 +198,14 @@ function toggleAMOLED() {
 }
 
 //Wallpaper Mode goes into FULL SCREEN
-const float = document.querySelector('#float');
+const floatIcon = document.querySelector('#float');
 const platform = document.querySelector('#platform');
 
 const toBeHiddens = [...h1s, ...inputs, ...buttons]; 
 
 function toggleWallpaper() {
   document.documentElement.requestFullscreen(); //add support for firefox, ?webkit?
-  float.classList.add('hide');
+  floatIcon.classList.add('hide');
   platform.classList.add('hide');
 
   toBeHiddens.forEach(toBeHidden => {
@@ -260,7 +217,7 @@ document.addEventListener("fullscreenchange", () => {
   if (document.fullscreenElement) {
     console.log("Is fullscreen");
   } else {
-    float.classList.remove('hide');
+    floatIcon.classList.remove('hide');
     platform.classList.remove('hide');
     
     toBeHiddens.forEach(toBeHidden => {
