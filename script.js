@@ -188,12 +188,31 @@ const dialogs = document.querySelectorAll('dialog');
 
 const toBeAMOLEDS = [...h1s, ...buttons, ...inputs, ...dialogs]; 
 
-
 function toggleAMOLED() {
   background.classList.toggle('amoled');
 
   toBeAMOLEDS.forEach(toBeAMOLED => {
     toBeAMOLED.classList.toggle('amoled');
+  });
+  //remember amoled mode choice
+  var mode;
+
+  if (background.classList.contains('amoled')) {
+    mode = "AMOLED";
+  } else {
+    mode = "NORMAL";
+  }
+  localStorage.setItem("AMOLED Mode", JSON.stringify(mode));
+}
+
+let GetTheme = JSON.parse(localStorage.getItem("AMOLED Mode"));
+console.log(GetTheme);
+
+if(GetTheme === "AMOLED") {
+  background.classList.add('amoled');
+
+  toBeAMOLEDS.forEach(toBeAMOLED => {
+    toBeAMOLED.classList.add('amoled');
   });
 }
 
