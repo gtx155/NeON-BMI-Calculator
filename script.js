@@ -194,7 +194,7 @@ function toggleAMOLED() {
   toBeAMOLEDS.forEach(toBeAMOLED => {
     toBeAMOLED.classList.toggle('amoled');
   });
-  //remember amoled mode choice
+  //remembers amoled mode choice
   var mode;
 
   if (background.classList.contains('amoled')) {
@@ -223,7 +223,7 @@ const platform = document.querySelector('#platform');
 const toBeHiddens = [...h1s, ...inputs, ...buttons]; 
 
 function toggleWallpaper() {
-  document.documentElement.requestFullscreen(); //add support for firefox, ?webkit?
+  document.documentElement.requestFullscreen();
   floatIcon.classList.add('hide');
   platform.classList.add('hide');
 
