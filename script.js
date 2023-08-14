@@ -64,7 +64,6 @@ argon.addEventListener('click', function() {
   element.classList.remove("neon", "radon", "nitrogen", "mercury-vapor", "hydrogen", "xenon", "krypton", "helium", "cesium");
   element.classList.add("argon");
 });
-
 });
 
 const neon = document.querySelector('.background li:nth-child(2)');

@@ -473,12 +473,12 @@ input[type=number] {
     top: 20px;
 }
 
-.h3-title {
+.modal h3 {
     margin-top: 0px;
     margin-bottom: 0.5rem;
 }
 
-.p-modal {
+.modal p {
     margin-top: 0px;
     margin-bottom: 1.1rem;
 }
